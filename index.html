@@ -116,12 +116,149 @@
 <blockquote>
 <h1 id="This-is-header-one"><a href="#This-is-header-one" class="headerlink" title="This is header one."></a>This is header one.</h1><h2 id="This-is-header-two"><a href="#This-is-header-two" class="headerlink" title="This is header two."></a>This is header two.</h2><h3 id="This-is-header-three"><a href="#This-is-header-three" class="headerlink" title="This is header three."></a>This is header three.</h3><h4 id="This-is-header-four"><a href="#This-is-header-four" class="headerlink" title="This is header four."></a>This is header four.</h4><h5 id="This-is-header-five"><a href="#This-is-header-five" class="headerlink" title="This is header five."></a>This is header five.</h5><h6 id="This-is-header-six"><a href="#This-is-header-six" class="headerlink" title="This is header six."></a>This is header six.</h6></blockquote>
 </li>
+<li><p>Links<br>There are two types of link in <strong>MarkDown</strong>. The first link is called <em>inline link</em>. In order to create this, the link text should be wrapped within two brackets ( [ ] ), and then link to wrapped in parenthesis( ( ) ).</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>[Visit GitHub!](w<a href="http://www.github.com" target="_blank" rel="noopener">www.github.com</a>)</p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<p><a href="www.github.com">Visit GitHub!</a></p>
+</blockquote>
+<p>The other type of link is called <em>reference link</em>. As the name implies, the link is actually a reference to another place in the document.  An advantage of the reference link style is that multiple links to the same place only need to be updated once. For example, if we decide to make all the same links go somewhere else, we only have to change the single reference link.<br>Reference links don’t appear in the rendered Markdown. You define them by providing the same tag name wrapped in brackets, followed by a colon, followed by the link.</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>[Visit Youtube][Youtube link]<br><a href="www.youtube.com">Youtube link</a>:<a href="http://www.youtube.com" target="_blank" rel="noopener">www.youtube.com</a></p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<p><a href="www.youtube.com">Visit Youtube</a></p>
+</blockquote>
+</li>
+</ol>
+<ol start="5">
+<li><p>Images<br>The way to create images is similar to links. There are two types of images. One is the <em>inline image link</em>. To create an inline image link, enter an exclamation point ( ! ), wrap the alt text in brackets ( [ ] ), and then wrap the link in parenthesis ( ( ) ). (Alt text is a phrase or sentence that describes the image for the visually impaired.)</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>![Bannekat](<a href="https://octodex.github.com/images/bannekat.png" target="_blank" rel="noopener">https://octodex.github.com/images/bannekat.png</a>)</p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<p><img src="https://octodex.github.com/images/bannekat.png" alt="Bannekat"></p>
+</blockquote>
+<p>The other type of image link is called <em>reference image link</em>. For a reference image, it is the same pattern as a reference link.</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>[Bannekat][Ban Cat]<br>[Ban Cat]:<a href="https://octodex.github.com/images/bannekat.png" target="_blank" rel="noopener">https://octodex.github.com/images/bannekat.png</a></p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<p><a href="https://octodex.github.com/images/bannekat.png" target="_blank" rel="noopener">Bannekat</a></p>
+</blockquote>
+</li>
+</ol>
+<ol start="6">
+<li><p>Blockquotes<br>A <em>blockquote</em> is a sentence or paragraph that’s been specially formatted to draw attention to the reader. To create a block quote, all you have to do is preface a line with the “greater than” caret (&gt;).</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>>This is a sentence needs to be quoted.</p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<p>This is a sentence needs to be quoted.</p>
+</blockquote>
+<p>Notice that even blank lines must contain the caret character. This ensures that the entire blockquote is grouped together. Also, Blockquotes can contain other Markdown elements, such as italics, images, or links.</p>
+</li>
+<li><p>Lists<br>There are two types of lists in the known universe: unordered and ordered. That’s a fancy way of saying that there are lists with bullet points, and lists with numbers.<br>To create an unordered list, you’ll want to preface each item in the list with an asterisk ( * ). Each list item also gets its own line.</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>* Milk<br>* Eggs<br>* Salmon<br>* Butter</p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<ul>
+<li>Milk</li>
+<li>Eggs</li>
+<li>Salmon</li>
+<li>Butter</li>
+</ul>
+</blockquote>
+<p>An ordered list is prefaced with numbers, instead of asterisks.</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>1. Milk<br>2. Eggs<br>3. Salmon<br>4. Butter</p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<ol>
+<li>Milk</li>
+<li>Eggs</li>
+<li>Salmon</li>
+<li>Butter</li>
+</ol>
+</blockquote>
+<p>If one list needs to be nested inside another list, MarkDown supports this by indenting each asterisk one space more than the preceding item.</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>* A<br>&nbsp;* A.1<br>&nbsp;* A.2<br>&nbsp;* A.3<br>* B<br>&nbsp;* B.1<br>&nbsp;* B.2<br>&nbsp;* B.3<br> &nbsp;&nbsp;* B.3.1<br> &nbsp;&nbsp;* B.3.2</p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<ul>
+<li>A<ul>
+<li>A.1</li>
+<li>A.2</li>
+<li>A.3</li>
+</ul>
+</li>
+<li>B<ul>
+<li>B.1</li>
+<li>B.2</li>
+<li>B.3<ul>
+<li>B.3.1</li>
+<li>B.3.2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Normally, it is not recommended to write more than three levels in lists.<br>Furtheremore, if some extra content requires to be added within the bullet list. To create this sort of text, your paragraph must start on a line all by itself underneath the bullet point, and it must be indented by at least one space.</p>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>1. Milk<br>&nbsp;&nbsp;Milk is good.<br>2. Eggs<br>&nbsp;&nbsp;Eggs are good.</p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<ol>
+<li>Milk<br>Milk is good.</li>
+<li>Eggs<br>Eggs are good.</li>
+</ol>
+</blockquote>
+</li>
+<li><p>Paragraphs<br>In MarkDown, writing a new paragraph cannot be achieved by only typing cores content in their own line. In such case, MarkDown will only render this as a straight line. However, if you forcefully insert a new line, you will break the togetherness. This is what we called as <strong>hard break</strong>. This issue can be solved by inserting two spaces after each line.</p>
+</li>
+</ol>
+<p>Content written in original MarkDown:</p>
+<blockquote>
+<p>This is paragraph A.**<br>This is paragraph B.**</p>
+</blockquote>
+<p>Corresponding effect:</p>
+<blockquote>
+<p>This is paragraph A.<br>This is paragraph B.</p>
+</blockquote>
+<p>The asterisk(*) is used to represented as a space here.</p>
+<h2 id="MarkDown-recommended-learning-sources"><a href="#MarkDown-recommended-learning-sources" class="headerlink" title="MarkDown recommended learning sources"></a>MarkDown recommended learning sources</h2><ol>
+<li><p>MarkDown online tutorial<br><a href="https://www.markdowntutorial.com/" target="_blank" rel="noopener">https://www.markdowntutorial.com/</a></p>
+</li>
+<li><p>MarkDown grammar tutorial<br><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="noopener">http://wowubuntu.com/markdown/index.html</a></p>
+</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/31/MarkDown-introduction/" data-id="cjhumhlxl00028kuud8i48x2x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/31/MarkDown-introduction/" data-id="cjhvw5g9j0000mkuu05bg8inr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MarkDown/">-MarkDown</a></li></ul>
@@ -159,7 +296,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/28/我的第一篇文章/" data-id="cjhumhlxh00018kuuw69fd2g5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/28/我的第一篇文章/" data-id="cjhvw5ga00004mkuuk8mq0i13" class="article-share-link">Share</a>
       
       
     </footer>
@@ -204,7 +341,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/28/hello-world/" data-id="cjhumhlxc00008kuuxfq3wv73" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/28/hello-world/" data-id="cjhvw5g9q0001mkuu2rzy49pe" class="article-share-link">Share</a>
       
       
     </footer>
