@@ -5,15 +5,20 @@
   
 
   
-  <title>Tag: LML | Hexo</title>
+  <title>Hexo Introduction and Local Installation | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/LML/index.html">
+  <meta name="description" content="What is Hexo?Hexo is a fast, simple, and high-efficient blog framework. MarkDown is supported by Hexo. Hexo can generates static websites based on nice themes. And it only needs one command to deploy">
+<meta name="keywords" content="Hexo,local installation,npm,EJS,Stylus,Node.js,Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo Introduction and Local Installation">
+<meta property="og:url" content="http://yoursite.com/2018/06/04/Hexo-Introduction-and-Local-Installation/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="What is Hexo?Hexo is a fast, simple, and high-efficient blog framework. MarkDown is supported by Hexo. Hexo can generates static websites based on nice themes. And it only needs one command to deploy">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-04T04:21:05.158Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Hexo Introduction and Local Installation">
+<meta name="twitter:description" content="What is Hexo?Hexo is a fast, simple, and high-efficient blog framework. MarkDown is supported by Hexo. Hexo can generates static websites based on nice themes. And it only needs one command to deploy">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,40 +65,74 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/05/31/MarkDown-introduction/" class="archive-article-date">
-  <time datetime="2018-05-31T13:18:44.000Z" itemprop="datePublished">May 31</time>
+        <section id="main"><article id="post-Hexo-Introduction-and-Local-Installation" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/04/Hexo-Introduction-and-Local-Installation/" class="article-date">
+  <time datetime="2018-06-04T03:19:30.000Z" itemprop="datePublished">2018-06-04</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/31/MarkDown-introduction/">MarkDown introduction</a>
+    <h1 class="article-title" itemprop="name">
+      Hexo Introduction and Local Installation
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="What-is-Hexo"><a href="#What-is-Hexo" class="headerlink" title="What is Hexo?"></a>What is Hexo?</h2><p><strong>Hexo</strong> is a fast, simple, and high-efficient blog framework. <strong>MarkDown</strong> is supported by Hexo. Hexo can generates static websites based on nice themes. And it only needs one command to deploy to GitHub.<br><a id="more"></a></p>
+<h2 id="Hexo-Installation"><a href="#Hexo-Installation" class="headerlink" title="Hexo Installation"></a>Hexo Installation</h2><p>Hexo can be installed within several minutes. Before that, make sure that these following things are set up already:</p>
+<ul>
+<li>Node.js</li>
+<li>Git</li>
+</ul>
+<p>If you have these already, then use <strong>npm</strong> to install Hexo:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>If not, following these step:</p>
+<blockquote>
+<p>links to other posts</p>
+</blockquote>
+<h2 id="Hexo-Configuration"><a href="#Hexo-Configuration" class="headerlink" title="Hexo Configuration"></a>Hexo Configuration</h2><p>Initialise your target <span style="background-color:grey">&lt;folder></span>.<br>Here, I named my target folder as “blog”.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>After initialization, your project folder will look like this:</p>
+<blockquote>
+<p>|- _config.yml<br>|- package.json<br> |- scaffolds<br> |- source<br> |&nbsp;&nbsp;|- &nbsp;_drafts<br> |&nbsp;&nbsp;|_ &nbsp;_posts<br> |_ themes</p>
+</blockquote>
+<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>File for configuration of the website, most of the settings are set up here.</p>
+<h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><p>Application data. <strong>EJS</strong>, <strong>Stylus</strong>, and <strong>MarkDown</strong> renderers are installed by defalut here. You can delete these afterwards if you want.</p>
+<h2 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h2><p>When new post is created, Hexo bases new file on the scaffolds.</p>
+<h2 id="source"><a href="#source" class="headerlink" title="source"></a>source</h2><p>All website content will be put here. Hexo will ignore hidden files, files or folders name start with <span style="background-color:grey">&nbsp;_&nbsp;</span>( or dash sign).</p>
+<h2 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h2><p>Hexo generates static websites by combining web contents and theme.</p>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/04/Hexo-Introduction-and-Local-Installation/" data-id="cjhzr00ax0001ewuuwmsargq2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/EJS/">EJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Stylus/">Stylus</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/local-installation/">local installation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm/">npm</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/02/Building-Personal-Website-Based-on-Hexo-and-GitHub-Pages/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Building Personal Website Based on Hexo and GitHub Pages</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         

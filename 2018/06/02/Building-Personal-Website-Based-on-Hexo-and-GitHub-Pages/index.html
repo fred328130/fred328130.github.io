@@ -5,15 +5,21 @@
   
 
   
-  <title>Tag: LML | Hexo</title>
+  <title>Building Personal Website Based on Hexo and GitHub Pages | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/LML/index.html">
+  <meta name="description" content="What is Hexo?Hexo is a quick, simple and high-efficient blog framework powered by Node.js. It is using MarkDown to">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Building Personal Website Based on Hexo and GitHub Pages">
+<meta property="og:url" content="http://yoursite.com/2018/06/02/Building-Personal-Website-Based-on-Hexo-and-GitHub-Pages/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="What is Hexo?Hexo is a quick, simple and high-efficient blog framework powered by Node.js. It is using MarkDown to">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://i65.tinypic.com/2rqc3zo.png">
+<meta property="og:updated_time" content="2018-06-04T04:21:02.953Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Building Personal Website Based on Hexo and GitHub Pages">
+<meta name="twitter:description" content="What is Hexo?Hexo is a quick, simple and high-efficient blog framework powered by Node.js. It is using MarkDown to">
+<meta name="twitter:image" content="http://i65.tinypic.com/2rqc3zo.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,40 +66,91 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/05/31/MarkDown-introduction/" class="archive-article-date">
-  <time datetime="2018-05-31T13:18:44.000Z" itemprop="datePublished">May 31</time>
+        <section id="main"><article id="post-Building-Personal-Website-Based-on-Hexo-and-GitHub-Pages" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/02/Building-Personal-Website-Based-on-Hexo-and-GitHub-Pages/" class="article-date">
+  <time datetime="2018-06-02T10:34:03.000Z" itemprop="datePublished">2018-06-02</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/31/MarkDown-introduction/">MarkDown introduction</a>
+    <h1 class="article-title" itemprop="name">
+      Building Personal Website Based on Hexo and GitHub Pages
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="What-is-Hexo"><a href="#What-is-Hexo" class="headerlink" title="What is Hexo?"></a>What is Hexo?</h2><p><strong>Hexo</strong> is a quick, simple and high-efficient blog framework powered by Node.js. It is using <strong>MarkDown</strong> to<br><a id="more"></a></p>
+<h2 id="Steps-to-build-blog"><a href="#Steps-to-build-blog" class="headerlink" title="Steps to build blog:"></a>Steps to build blog:</h2><ol>
+<li>Purchasing your own custom domain name:<br>If you want to your website hosted by a perfect domain name you prefer, the first thing is to buy it on <strong>GoDaddy</strong>. As a personal domain name, it is recommended to use a name ended with <strong>.me</strong> extension. Here, like my domain is <a href="fredzhao.me">fredzhao.me</a>.</li>
+<li><p>Installing Hexo:<br>Installation of Hexo is simple. However, you have to ensure that these applications are equipped:</p>
+<ul>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+</ul>
+<p>If you failed to install Git or Node.js, here are two tips to help you:</p>
+<ul>
+<li><a href="https://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html" target="_blank" rel="noopener">Git Installation on Windows</a></li>
+<li><a href="https://jingyan.baidu.com/article/b0b63dbfca599a4a483070a5.html" target="_blank" rel="noopener">Node.js</a></li>
+</ul>
+<p>Once you finished the above steps, you are readly to use <strong>npm</strong> to install Hexo.<br>Here, two tutorials are recommended for Git and GitHub:</p>
+<ul>
+<li><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">Git tutorials</a></li>
+<li><a href="https://www.zhihu.com/question/20070065" target="_blank" rel="noopener">GitHub tutorials</a></li>
+</ul>
+<p>Open <strong>Git Bash</strong>, input command like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> c:</span><br></pre></td></tr></table></figure>
+<p>Then, input command like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>Subsequently, you need to create a folder to hold all you blogs. You can initialize your framework like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<p>After your blog folder is created, you need to type command under this folder:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+<p>Finally, typing command like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>After completing the above commands, your blog folder will look like this:<br><img src="http://i65.tinypic.com/2rqc3zo.png" alt="npm installation finish"></p>
+</li>
+</ol>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/02/Building-Personal-Website-Based-on-Hexo-and-GitHub-Pages/" data-id="cjhzr00as0000ewuuj1c4nmob" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/06/04/Hexo-Introduction-and-Local-Installation/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hexo Introduction and Local Installation
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/06/02/How-to-Set-up-Use-Atom-as-a-MarkDown-Editor-in-Windows-10/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">How to Set up &amp; Use Atom as a MarkDown Editor in Windows 10</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
